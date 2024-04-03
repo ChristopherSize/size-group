@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #222;
+    color: #eee;
+}
+nav > ul >li{
+   float:left;/*Pour que les éléments de notre menu flote côte à côte*/ 
+   position: relative;/*This is to place the submenu just below the menu*/
+}
+li{
+    list-style-type: none;/*Pour rétirer les puces d'une liste*/ 
+   
+}
+.strollingMenu{
+    display: none;/*Inorder to hide our strolling menu*/
+}
+
+nav{
+    background-color: darkblue;/*Samantha demande que je change de blue*/
+    width: 100%;
+}
+nav > ul{/*L'enfant direct de l'élément nav*/
+    margin: 0px;
+    padding: 0px;
+    
+    /*overflow: hidden;/*On ne peut pas utiliser ceci car ça 
+    cachera nos sous onglets*/
+}
+nav  ::after{
+    /*Pour rétablir la hauteur de l'élément parent car notre
+     élément parent 
+    non floatant contient des éléments floatants*/
+    content: "";
+    display: block;
+    clear: both;
+}
+nav a{
+    display:inline-block;
+    text-decoration: none;
+    /*Ici c'était la prémière version de la bar de navigation */
+    /*padding: 30px 30px;/*Pour étendre nos lien augmenter 
+    l'espace entre nos onglets*/
+}
+#enterpriseName:hover{
+    border-bottom: 5px solid red;/* Samantha demande que je 
+    change la couleur rouge*/
+    background-color: RGBa(255,255,255,0.15);
+}
+#enterpriseSolutions:hover{
+    border-bottom: 5px solid red;
+    background-color: RGBa(255,255,255,0.15);
+}
+#enterpriseResources:hover{
+    border-bottom: 5px solid red;
+    background-color: RGBa(255,255,255,0.15);
+}
+#enterpriseAbout:hover{
+    border-bottom: 5px solid red;
+    background-color: RGBa(255,255,255,0.15);
+}
+/* Pour regler le problème du déplacement de la bordure 
+lorsqu'on survole l'élément*/
+/*Modification de l'élément li lorsque on survole l'élément a*/
+nav li:hover a{
+  padding: 25px 30px 30px 30px;
+}
+
+/*On cible les éléments principaux de notre menu*/
+nav > ul > li >a{
+    padding: 30px 30px; 
+}
+
+/* On souhaite modifier les styles de notre  
+sous menu lorsqu'on survole nous onglets principaux*/
+nav li:hover .strollingMenu{
+    display: inline-block;
+    position:absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+/* On applique des styles a nos sous menu*/
+.strollingMenu li{
+    border-bottom: 1px solid #ccc;
+}
+.strollingMenu li p{
+    padding: 25px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+.strollingMenu {
+    background-color: yellow;
+}
+.strollingMenu li:hover p{
+    font-weight: bold;
+    color: white;
+}
+
+.strollingMenu li:hover{
+    background-color: blue;
+}
+
+
