@@ -1,20 +1,43 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: #eee;
 }
 .box{
-    border-style: solid;
+    /*border-style: solid;*/
     border-radius: 5px;
     border-width: 1px;
     display: inline-block;
     margin-left:50px;
-    
+    transition: 0.2s ease-in;
+    /*box-shadow: 0px 10px 30px black;*/
+    transition: all 0.2s ease-in;/*???*/
+    background-color: white;
+    line-height: 25px;/*Gestion des espaces entre les lignes du text*/
 }
-strong:hover{
+.box:hover{
+    transform:scale(1.1);/*Pour faire grossir nos boites*/
+}
+.title:hover{
     text-decoration: underline;
 }
 .container{
+    /*text-align: center;*/
+    width: 100%;
+    height: 100vh;/*Pour que notre container puise faire toutes la page*/
+    /*margin-top: 20% ;*/
+    display: flex;/* Pour mettre les cartes les unes après les autres*/
+    align-items: center;/*Pour centrer les cartes vertiaclement*/
+    justify-content: center;/*Pour centrer horizontalement*/  
+}
+img{
+    width: 225px;
+}
+.title{
     text-align: center;
-    width: 90%;
-    margin-top: 20% ;
+    font-weight: bold;
+    font-size: 25px;
+}
+.inner-box{
+    text-align: center;
 }
