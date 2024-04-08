@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    display: inline-block;
+    margin-left:50px;
+    
+}
+strong:hover{
+    text-decoration: underline;
+}
+.container{
+    text-align: center;
+    width: 90%;
+    margin-top: 20% ;
+}
