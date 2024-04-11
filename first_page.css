@@ -16,22 +16,62 @@ body{
     line-height: 25px;/*Gestion des espaces entre les lignes du text*/
 }
 .box:hover{
-    transform:scale(1.1);/*Pour faire grossir nos boites*/
+    transform:scale(1.4);/*Pour faire grossir nos boites*/
+    
 }
+
+/*Affichage du menu déroulant*/
+.box:hover .inner-box{
+    display: inline-block;
+    position:absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+    
+}
+
+.box:hover img{
+    animation: none;
+}
+
 .title:hover{
     text-decoration: underline;
 }
 .container{
     /*text-align: center;*/
     width: 100%;
-    height: 100vh;/*Pour que notre container puise faire toutes la page*/
-    /*margin-top: 20% ;*/
+    /*height: 100vh;*//*Pour que notre container puise faire toutes la page*/
+    margin-top: 10% ;
     display: flex;/* Pour mettre les cartes les unes après les autres*/
     align-items: center;/*Pour centrer les cartes vertiaclement*/
     justify-content: center;/*Pour centrer horizontalement*/  
 }
 img{
+    border-radius: 5px;
     width: 225px;
+    height: 250px;
+    animation: movement;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: movement all 60s;
+    
+}
+
+
+/*Creation de mon animation*/
+@keyframes movement{
+    0%{
+        
+        transform: translateY(0px);/*??*/  
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 .title{
     text-align: center;
@@ -40,4 +80,21 @@ img{
 }
 .inner-box{
     text-align: center;
+    display: none;
+}
+.image{
+    position: relative;
+}
+#logo{
+    text-align: center;
+}
+#imLogo{
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+}
+#docker{
+    margin-top: -6%;
 }
