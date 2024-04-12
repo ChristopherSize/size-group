@@ -1,8 +1,8 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #222;
-    color: #eee;
+    background-color: #ece;
+    
 }
 nav > ul >li{
    float:left;/*Pour que les éléments de notre menu flote côte à côte*/ 
@@ -86,7 +86,7 @@ nav li:hover .strollingMenu{
 .strollingMenu li{
     border-bottom: 1px solid #ccc;
 }
-.strollingMenu li p{
+.strollingMenu li a{
     padding: 25px 30px;
     font-size: 13px;
     color: #222538;
@@ -95,7 +95,7 @@ nav li:hover .strollingMenu{
 .strollingMenu {
     background-color: yellow;
 }
-.strollingMenu li:hover p{
+.strollingMenu li:hover a{
     font-weight: bold;
     color: white;
 }
@@ -103,5 +103,72 @@ nav li:hover .strollingMenu{
 .strollingMenu li:hover{
     background-color: blue;
 }
+img{
+    height: 75px;
+    width: 100px;
+}
 
+fieldset{
+    border-color: white;
+}
+.box{
+    /*border-style: solid;*/
+    border-radius: 5px;
+    border-width: 1px;
+    display: inline-block;
+    margin-left:50px;
+    transition: 0.2s ease-in;
+    /*box-shadow: 0px 10px 30px black;*/
+    transition: all 0.2s ease-in;/*???*/
+    background-color: white;
+    line-height: 25px;/*Gestion des espaces entre les lignes du text*/
+}
+.box:hover{
+    transform:scale(1.1);/*Pour faire grossir nos boites*/
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
 
+/*Affichage du menu déroulant*/
+.box:hover .inner-box{
+    display: inline-block;
+    position:absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+    
+}
+
+.title:hover{
+    text-decoration: underline;
+}
+.container{
+    /*text-align: center;*/
+    width: 100%;
+    /*height: 100vh;*//*Pour que notre container puise faire toutes la page*/
+    display: flex;/* Pour mettre les cartes les unes après les autres*/
+    align-items: center;/*Pour centrer les cartes vertiaclement*/
+    justify-content: center;/*Pour centrer horizontalement*/  
+}
+.urgence{
+    border-radius: 5px;
+    width: 200px;
+    height: 225px;
+    transition: movement all 60s;
+    
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.inner-box{
+    text-align: center;
+    display: none;
+    background-color: white;
+}
+.image{
+    position: relative;
+}
