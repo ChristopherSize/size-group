@@ -1,0 +1,171 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    /*overflow: scroll;*/
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 400px;/*Pour que la table soit grande quelque soit le contenu*/
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;/*Utiliser ici pour que border radius marche*/
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5%;
+}
+table thead tr{
+    background-color: #009879;
+    color: #eee;
+    text-align:left;/*Pour aligner à gauche*/
+    font-weight: bold;
+}
+table th,table td{
+    padding: 12px 15px;/* Espace entre les cellules*/
+}
+table tbody tr{
+    border-bottom: 1px solid #ccc;
+}
+table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;/*Ici on ne sélectionne que les lignes paires*/
+}
+table tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;/*Ici je cible la dernière ligne*/
+}
+a{
+    text-decoration: none;
+}
+
+
+#form input{
+    margin-left: 5px;
+    border-radius: 10px;
+    width: 300px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#form{
+    margin: 50px auto 0 auto;
+    width: 30%;
+    background-color: rgba(255, 255,255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#form input[type="submit"]{
+    font-weight: bold;
+}
+.ajouter{
+    background-image: url(luffy.jpeg);
+    overflow: hidden;
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"][id="click"]:checked ~ .ajouter{
+    display: block;
+}
+
+#form1 input{
+    margin-left: 5px;
+    border-radius: 10px;
+    width: 300px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#form1{
+    margin: 50px auto 0 auto;
+    width: 30%;
+    background-color: rgba(255, 255,255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#form1 input[type="submit"]{
+    font-weight: bold;
+}
+.modifier{
+    background-image: url(anime.jpg);
+    overflow:hidden ;
+    display: none;
+}
+input[type="checkbox"][id="click1"]:checked ~.modifier{
+    display: block;
+}
+nav{
+    background-color: #009879;
+    height: 126px;
+    /*display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;*/
+    width: 100%;
+}
+/*.nav1 {
+    width: 50%;
+    height: 126px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.nav2 {
+    width: 5%;
+    height: 126px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}*/
+#image{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+}
+#admin{
+    color: #eee;
+    font-size: 50px;
+    position: relative;
+    bottom: 30%;
+    margin-left: 1%;
+}
+#logout{
+    width:70px;
+   position: relative;
+   left: 72%;
+   bottom: 23%;
+}
+.option{
+    background-color: #ec385a;
+    border-radius: 10px;
+    color: #eee;
+    height: 30px;
+    border-color: #ec385a;
+}
+
+.result{
+    padding: 10px;
+    margin: 20px;
+    border-style: solid;
+    background-color: darkblue;
+    color: #eee;
+    border-color: darkblue;
+    border-radius: 10px;
+    
+}
+#modifiers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
