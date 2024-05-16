@@ -1,0 +1,367 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+/* Styles for header */
+header {
+    height: auto; /* Change height to auto */
+    background-color: rgba(255, 255, 255, 255);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styles for the logo */
+img {
+    width: 85px;
+    height: 85px;
+    object-fit: scale-down;
+}
+
+/* Styles for the SizeGroup link */
+.principale {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+}
+
+.principale a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: auto; /* Push SizeGroup link to the right */
+    font-weight: bold;
+    margin-left: 10px; /* Add some space between the logo and link */
+}
+
+/* Styles for the navigation links */
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Vertically center the items */
+}
+
+ul li {
+    margin-left: 10px; /* Add space between navigation links */
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background: #060606;
+    color: #fffcfc;
+    
+}
+.banniere {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(to left, rgba(0,0,0,0.5) 50%, transparent 50%), url('berseck.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.banniere .contenu {
+    text-align: center;
+    width: 50%; /* Limite la largeur du texte à la moitié droite de la bannière */
+}
+
+.banniere .contenu h2 {
+    color: #FFFFFF; /* Change la couleur du texte pour améliorer la visibilité sur un fond sombre */
+    font-size: 2em;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3{
+    color: #FFFFFF; /* Couleur du texte */
+    font-size: 1.1em; /* Taille de la police */
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+    margin-top: 20px; /* Espace en haut */
+    margin-bottom: 20px; /* Espace en bas */
+    padding: 0 20px; /* Espacement à gauche et à droite */
+    text-align: center;
+}
+/* Styles for sections */
+section {
+    padding: 50px 20px; /* Espacement intérieur des sections */
+    text-align: center; /* Centrage du contenu dans les sections */
+}
+
+/* Styles for section headings */
+section h2 {
+    color: #060606; /* Couleur du titre */
+    font-size: 2em; /* Taille de la police du titre */
+    margin-bottom: 20px; /* Espacement en bas du titre */
+}
+
+/* Styles for section paragraphs */
+section p {
+    color: #ffffff; /* Couleur du texte */
+    font-size: 1.1em; /* Taille de la police du texte */
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+}
+/* Styles pour les images des espadas */
+.membre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacement entre les boîtes contenant les images et les textes */
+}
+
+
+/* Styles pour les images des espadas */
+.box {
+    text-align: center;
+    width: 200px; /* Largeur fixe pour chaque boîte contenant l'image et le texte */
+}
+
+/* Styles pour les images des espadas */
+.box img {
+    width: 100%; /* L'image occupe 100% de la largeur de sa boîte parente */
+    height: 200px; /* Hauteur fixe pour les images */
+    object-fit: cover; /* Assure que l'image couvre entièrement sa boîte parente sans se déformer */
+    border-radius: 10px; /* Ajoute des coins arrondis aux images */
+    transition: transform 0.3s ease; /* Ajoute une transition pour l'effet de transformation */
+}
+
+/* Style pour l'effet d'agrandissement au survol */
+.box img:hover {
+    transform: scale(1.1); /* Agrandit l'image de 10% au survol */
+    cursor: pointer; /* Change le curseur de la souris en une main pour indiquer qu'il est cliquable */
+}
+
+
+.text {
+    margin-top: 10px; /* Espace entre l'image et le texte */
+}
+
+.text h3 {
+    margin: 0; /* Supprime la marge par défaut du titre h3 */
+    font-size: 1em;
+    color: #ffffff; /* Couleur du texte */
+}
+/* Styles pour le paragraphe du texte "Here we have..." */
+section#customers p {
+    margin-bottom: 30px; /* Ajoute un espace en bas du paragraphe */
+}
+
+/* Styles pour la section "Customers" */
+section#customers {
+    background-color: #000000; /* Couleur de fond noire */
+    padding: 50px 20px; /* Espacement intérieur des sections */
+    text-align: center; /* Centrage du contenu dans la section */
+}
+section#customers h2{
+    color:#FFFFFF;
+}
+
+.mission {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.mission img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.mission:hover img {
+    transform: scale(1.05);
+}
+
+.mission-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mission h2 {
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.mission:hover h2 {
+    color: #ff6b6b;
+}
+
+.mission p {
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.mission:hover p {
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .mission {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .mission-content {
+        text-align: center;
+    }
+}
+
+
+#events .event {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease; /* Ajout d'une transition fluide */
+}
+
+#events .event:hover {
+    transform: translateY(-5px); /* Déplacement vers le haut au survol */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Ombre portée plus prononcée */
+}
+
+#events .event h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em; /* Taille de police légèrement augmentée */
+    transition: color 0.3s ease; /* Transition de couleur fluide */
+}
+
+#events .event:hover h3 {
+    color: #ff6600; /* Changement de couleur au survol */
+}
+
+#events .event p {
+    margin: 5px 0;
+    color: #666;
+}
+
+#events .event:hover p {
+    color: #444; /* Changement de couleur au survol */
+}
+
+#events .event .details {
+    display: none; /* Masquer les détails par défaut */
+}
+
+#about {
+    background-color: #282c34;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-box {
+    background: #463b3b;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.about-box:hover {
+    transform: translateY(-10px);
+}
+
+.about-img {
+    overflow: hidden;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.about-box:hover .about-img img {
+    transform: scale(1.1);
+}
+
+.about-text {
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-text h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.about-text p {
+    margin: 10px 0 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
